@@ -41,3 +41,312 @@
 2023-06-03 19:04:32,442 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-06-03 19:04:32,442 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-06-03 19:04:32,446 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-03 19:08:31,117 [Worker-10: Periodic workspace save.] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1149)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-06-03 19:11:21,892 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-03 19:12:32,483 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-03 19:12:58,344 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-03 19:13:25,248 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-03 19:13:33,695 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-03 19:15:13,792 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-03 19:15:21,576 [Worker-12: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-03 19:15:21,604 [Worker-12: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 133 resources from src\main\resources to target\classes
+2023-06-03 19:15:21,796 [Worker-12: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-03 19:16:27,878 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-03 22:53:29,973 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-03 22:56:28,285 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-03 23:49:57,684 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-04 00:04:57,641 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-04 01:10:10,746 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-04 01:16:17,700 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:128)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:117)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1160)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:393)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:209)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:212)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1170)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-06-04 19:59:39,030 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-06-04 22:56:10,025 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-05 04:54:53,366 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-05 07:08:37,231 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-05 19:22:33,137 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-07 01:08:04,926 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-06-07 01:08:22,423 [Worker-2: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 01:08:22,455 [Worker-2: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 133 resources from src\main\resources to target\classes
+2023-06-07 01:08:22,634 [Worker-2: Launching IntiElectrodomesticos - IntiElectrodomesticosApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:25:40,072 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:25:40,072 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:25:40,080 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:26:12,210 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:26:12,210 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:26:12,215 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:27:40,988 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:27:40,988 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:27:40,994 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:27:41,161 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:27:41,161 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:27:41,166 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:27:54,193 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:27:54,193 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:27:54,197 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:28:24,086 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:28:24,087 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:28:24,094 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:28:27,265 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:28:27,265 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:28:27,271 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:28:48,376 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:28:48,376 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:28:48,381 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:28:58,434 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:28:58,434 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:28:58,438 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:29:42,806 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:29:42,806 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:29:42,810 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:29:51,976 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:29:51,976 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:29:51,980 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:30:17,873 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:30:17,890 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 136 resources from src\main\resources to target\classes
+2023-06-07 02:30:17,921 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:30:26,153 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:30:26,167 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 136 resources from src\main\resources to target\classes
+2023-06-07 02:30:26,194 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:30:42,652 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:30:42,652 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:30:42,656 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:30:45,785 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:30:45,798 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 136 resources from src\main\resources to target\classes
+2023-06-07 02:30:45,836 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:31:08,088 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:31:08,094 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 136 resources from src\main\resources to target\classes
+2023-06-07 02:31:08,112 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:31:34,633 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:31:34,633 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:31:34,636 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:31:38,828 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:31:38,828 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:31:38,832 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:33:09,441 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:33:09,442 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:33:09,445 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:33:13,434 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:33:13,435 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:33:13,441 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:33:57,666 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:33:57,666 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:33:57,670 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:34:45,351 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:34:45,352 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:34:45,355 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:37:23,819 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:37:23,820 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:37:23,823 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:38:29,752 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:38:29,764 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:38:29,801 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:38:46,322 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:38:46,330 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:38:46,352 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:38:52,067 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:38:52,068 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:38:52,072 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:39:29,630 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:39:29,631 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:39:29,635 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:40:01,782 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:40:01,791 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:40:01,820 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:40:07,880 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:40:07,888 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:40:07,905 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:40:16,241 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:40:16,252 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:40:16,277 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:40:32,714 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:40:32,721 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 138 resources from src\main\resources to target\classes
+2023-06-07 02:40:32,740 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:42:30,272 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:42:30,272 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:42:30,277 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:42:37,646 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:42:37,646 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:42:37,651 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:42:40,800 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:42:40,801 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:42:40,804 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:43:07,998 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:43:07,998 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:43:08,001 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:43:24,020 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:43:24,021 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:43:24,025 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:43:38,521 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:43:38,521 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:43:38,524 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:52:18,831 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:52:18,831 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:52:18,835 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:52:42,790 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:52:42,790 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:52:42,794 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:52:45,196 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:52:45,196 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:52:45,199 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:53:56,136 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:53:56,136 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:53:56,139 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:54:24,183 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:54:24,184 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:54:24,187 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:55:17,886 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:55:17,886 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:55:17,890 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:55:26,000 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:55:26,001 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:55:26,004 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:56:30,363 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:56:30,363 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:56:30,366 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:58:31,273 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:58:31,274 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:58:31,278 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:58:42,839 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:58:42,839 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:58:42,842 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:59:14,694 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:59:14,695 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:59:14,698 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources
+2023-06-07 02:59:21,924 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-06-07 02:59:21,925 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-06-07 02:59:21,928 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\IntiElectrodomesticos\src\test\resources

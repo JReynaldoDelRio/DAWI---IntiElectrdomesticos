@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <header>
+        <h1>Mantenimiento de Productos</h1>
+        <div class="filter-form">
+          <input type="text" placeholder="Ingresar nombre">
+          <button>Filtrar</button>
+        </div>
+      </header>
+      <main>
+        <button class="register-button" onclick="openDialog()">Registrar Producto</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Producto</th>
+              <th>Marca</th>
+              <th>Stock</th>
+              <th>Precio</th>
+              <th>Editar</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Producto A</td>
+              <td>Marca A</td>
+              <td>10</td>
+              <td>$19.99</td>
+              <td><img src="img/editar.png" alt="Editar"></td>
+              <td><img src="img/eliminar.png" alt="Editar"></td>
+            </tr>
+            <!-- Más filas de la tabla aquí -->
+            <tr>
+                <td>001</td>
+                <td>Producto A</td>
+                <td>Marca A</td>
+                <td>10</td>
+                <td>$19.99</td>
+                <td><img src="img/editar.png" alt="Editar"></td>
+                <td><img src="img/eliminar.png" alt="Editar"></td>
+              </tr>
+          </tbody>
+        </table>
+      </main>
+
+    <dialog id="register-dialog" >
+        <h2>Registro de Producto</h2>
+        <form>
+          <label for="name">Nombre:</label>
+          <select id="name">
+            <option value="producto1">Producto 1</option>
+            <option value="producto2">Producto 2</option>
+            <option value="producto3">Producto 3</option>
+          </select>
+    
+          <label for="brand">Marca:</label>
+          <select id="brand">
+            <option value="marca1">Marca 1</option>
+            <option value="marca2">Marca 2</option>
+            <option value="marca3">Marca 3</option>
+          </select>
+    
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock">
+    
+          <label for="price">Precio:</label>
+          <input type="number" step="0.01" id="price">
+    
+          <button type="button" onclick="registerProduct()">Registrar</button>
+          <button type="button" onclick="closeDialog()">Cancelar</button>
+        </form>
+      </dialog>
+      <script src="script.js"></script>
+</body>
+</html>

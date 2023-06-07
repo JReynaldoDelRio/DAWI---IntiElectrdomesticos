@@ -9,6 +9,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springfra
 This is a continuation of log file D:\Cibertec\V Ciclo\DESAROLLO DE APLICACIONES WEB I\Proyecto\Proyecto - IntiElectromesticos\.metadata\.bak_1.log
 Created Time: 2023-06-03 19:03:34.464
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.lsp4e 4 0 2023-06-03 19:03:34.465
 !MESSAGE Exception occurred while fetching the content type from the buffer
@@ -11717,6 +11718,8 @@ java.lang.Exception: Resource '/IntiElectrodomesticos/src/main/resources/static/
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 =======
+=======
+>>>>>>> producto
 
 !ENTRY org.eclipse.lsp4e 4 0 2023-06-03 19:03:34.465
 !MESSAGE Exception occurred while fetching the content type from the buffer
@@ -23659,4 +23662,7 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.lsp4e 2 0 2023-06-05 07:20:33.937
 !MESSAGE [Warning]	Using Typescript version (user-setting) 4.9.5 from path "D:\Aplicaciones\Spring - Framework\sts-4.18.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.0.3.202303081618\node_modules\typescript\lib\tsserver.js"
+<<<<<<< HEAD
+>>>>>>> producto
+=======
 >>>>>>> producto

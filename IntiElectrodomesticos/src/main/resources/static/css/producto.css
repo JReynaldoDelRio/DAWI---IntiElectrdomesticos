@@ -51,7 +51,7 @@ main {
 
 table {
 	margin: 0 auto; /* Centrar la tabla horizontalmente */
-	max-width: 800px; /* Ancho máximo de la tabla */
+	max-width: 1400px; /* Ancho máximo de la tabla */
 	width: 100%;
 	table-layout: fixed; /* Fijar el ancho de las columnas */
 }
@@ -70,10 +70,8 @@ tbody tr:hover {
 	background-color: #f9f9f9;
 }
 
-th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(3),
-	td:nth-child(3), th:nth-child(4), td:nth-child(4), th:nth-child(5), td:nth-child(5),
-	th:nth-child(6), td:nth-child(6), th:nth-child(7), td:nth-child(7) {
-	width: 15.28%; /* Tamaño de cada columna (100% / 7) */
+th:nth-child(6), td:nth-child(6), th:nth-child(7), td:nth-child(7) {
+	width: 7.28%; /* Tamaño de cada columna (100% / 7) */
 }
 
 img {
@@ -123,4 +121,11 @@ dialog button {
 	border-radius: 3px;
 	cursor: pointer;
 	margin-top: 10px;
+}
+
+.error-message {
+	color: red;
+	font-size: 14px;
+	margin-top: 0px;
+
 }

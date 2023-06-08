@@ -1,0 +1,16 @@
+package com.inti.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Table (name = "tb_producto")
+@Data
+public class Producto {
+	
+	private int id_prod;
+	private int id_alm;
+	private int id_marc;
+	private int stock_prod;
+}

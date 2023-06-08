@@ -1,0 +1,12 @@
+package com.inti.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table (name = "tb_marca")
+public class Marca {
+	private int id_marc;
+	private String nomb_marc;
+	
+}

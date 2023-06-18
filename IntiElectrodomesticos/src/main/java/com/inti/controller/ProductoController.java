@@ -2,6 +2,7 @@ package com.inti.controller;
 
 import java.util.List;
 
+
 import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,11 +12,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.inti.model.Producto;
 import com.inti.repository.IAlmacenamientoRepository;
 import com.inti.repository.IMarcaRepository;
 import com.inti.repository.IProductoRepository;
+
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class ProductoController {
@@ -71,6 +76,8 @@ public class ProductoController {
 		repoProd.deleteById(id);	
 		return "redirect:/mantenimientoProducto";
 	}
+	
+	
 	
 }
 

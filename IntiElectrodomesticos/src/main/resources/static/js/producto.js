@@ -1,13 +1,6 @@
-function openDialog() {
-	document.getElementById('register-dialog').showModal();
-}
-
-function closeDialog() {
-	document.getElementById('register-dialog').close();
-}
 
 function registerProduct() {
-	var isValid = true; 
+	var isValid = true;
 
 	var name = document.getElementById('name');
 	var brand = document.getElementById('brand');
@@ -43,7 +36,7 @@ function registerProduct() {
 		// Mostrar mensaje de error específico para el stock
 		var stockError = document.getElementById('stockError');
 		stockError.textContent = 'El stock debe ser mayor a 0';
-		
+
 	} else {
 		stockInput.classList.remove('error');
 		var stockError = document.getElementById('stockError');
@@ -64,36 +57,80 @@ function registerProduct() {
 		var priceError = document.getElementById('priceError');
 		priceError.style.display = 'none';
 	}
-	
+
 	if (isValid) {
-		Swal.fire('¡Registro correcto!', '', 'success');
+		alert("Registro correcto")
 	}
 	return isValid;
-	
+
 }
-function confirmAction(id) {
-  Swal.fire({
-    title: 'Confirmar eliminación',
-    text: '¿Estás seguro de que deseas eliminar este elemento?',
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Sí, eliminar',
-    cancelButtonText: 'Cancelar'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      axios.delete(`/eliminar/${id}`)
-        .then(() => {
-          Swal.fire('Eliminado', 'El elemento ha sido eliminado correctamente', 'success')
-            .then(() => {
-              window.location.href = '/producto/listado';
-            });
-        })
-        .catch((error) => {
-          Swal.fire('Error', 'Ocurrió un error al eliminar el elemento', 'error');
-          console.error(error);
-        });
-    }
-  });
+
+/*Metodo para la paginacion*/
+
+// Obtener la referencia a la tabla y los botones de paginación
+var table = document.getElementById('id_table');
+var prevBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+var currentPageElement = document.getElementById('currentPage');
+
+// Definir el número de filas por página y la página actual
+var rowsPerPage = 10;
+var currentPage = 1;
+
+// Calcular el número total de páginas
+var totalRows = table.tBodies[0].rows.length;
+var totalPages = Math.ceil(totalRows / rowsPerPage);
+
+// Función para mostrar las filas correspondientes a la página actual
+function showPage(page) {
+	// Calcular el rango de filas a mostrar
+	var startIndex = (page - 1) * rowsPerPage;
+	var endIndex = startIndex + rowsPerPage;
+
+	// Ocultar todas las filas de la tabla
+	for (var i = 0; i < totalRows; i++) {
+		var row = table.tBodies[0].rows[i];
+		row.style.display = 'none';
+	}
+
+	// Mostrar las filas correspondientes a la página actual
+	for (var j = startIndex; j < endIndex && j < totalRows; j++) {
+		var row = table.tBodies[0].rows[j];
+		row.style.display = '';
+	}
+
+	// Actualizar el número de página actual en el elemento correspondiente
+	currentPageElement.textContent = 'Página ' + page + ' de ' + totalPages;
+}
+
+// Función para ir a la página anterior
+function goToPrevPage() {
+	if (currentPage > 1) {
+		currentPage--;
+		showPage(currentPage);
+	}
+}
+
+// Función para ir a la página siguiente
+function goToNextPage() {
+	if (currentPage < totalPages) {
+		currentPage++;
+		showPage(currentPage);
+	}
+}
+
+// Mostrar la primera página al cargar la página
+showPage(currentPage);
+
+// Agregar los controladores de eventos a los botones de paginación
+prevBtn.addEventListener('click', goToPrevPage);
+nextBtn.addEventListener('click', goToNextPage);
+
+function confirmarEliminacion() {
+	if (confirm("¿Estás seguro de que deseas eliminar este producto?")) {
+		alert("Producto eliminado")
+		return true;
+	} else {
+		return false;
+	}
 }

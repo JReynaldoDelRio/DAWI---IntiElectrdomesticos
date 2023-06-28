@@ -33,13 +33,13 @@
 			<div class="row" style="height: 70px">
 				<div class="col-md-2">
 					<input class="form-control" id="id_txt_filtro" style="width: 170px"
-						name="filtro" placeholder="Ingrese el nombre" type="text"/>
+						name="filtro" placeholder="Ingrese el nombre" type="text" />
 				</div>
 				<div class="col-md-2">
 					<button type="button" class="btn btn-primary" id="id_btn_filtrar"
 						style="width: 150px">FILTRA</button>
 				</div>
-				
+
 				<div class="col-md-2">
 					<button type="button" data-toggle='modal'
 						data-target="#id_div_modal_registra" class='btn btn-primary'
@@ -74,8 +74,17 @@
 									<td th:text="${p.objMarc.nomb_marc}">Marca A</td>
 									<td th:text="${p.stock_prod}">10</td>
 									<td th:text="${p.precio_prod}">$19.99</td>
-									<td style="text-align: center;"><a><img
-											src="img/editar.png" alt="Editar" style="width: 40px;"></a></td>
+									<!-- <td style="text-align: center;"><a data-toggle='modal'
+										data-target="#id_div_modal_actualiza"
+										th:href="@{/editar/{id}(id=${p.id_prod})}" > <img
+											src="img/editar.png" alt="Editar" title="Editar"
+											style="width: 40px;"></a></td>-->
+									<td style="text-align: center;">
+    <a data-toggle="modal" data-target="#id_div_modal_actualiza" class="editar-producto" data-producto-id="${p.id_prod}">
+        <img src="img/editar.png" alt="Editar" title="Editar" style="width: 40px;">
+    </a>
+</td>
+
 									<td style="text-align: center;"><a
 										th:href="@{/eliminar/{id}(id=${p.id_prod})}"
 										onclick="return confirmarEliminacion()"><img
@@ -110,8 +119,9 @@
 						</h4>
 					</div>
 					<div class="modal-body" style="padding: 20px 10px;">
-						<form action="/producto/grabar"  method="post"
-							class="form-horizontal" th:object="${producto}"onsubmit="return registerProduct()" >
+						<form action="/producto/grabar" method="post"
+							class="form-horizontal" th:object="${producto}"
+							onsubmit="return registerProduct()">
 							<div class="panel-group" id="steps">
 
 								<div class="panel panel-default">
@@ -119,47 +129,51 @@
 									<div id="stepOne" class="panel-collapse collapse in">
 										<div class="panel-body">
 											<div class="form-group">
-												<label class="col-lg-3 control-label">Nombre
-													del Prooducto</label>
+												<label class="col-lg-3 control-label">Nombre del
+													Prooducto</label>
 												<div class="col-lg-3">
-													<select id="name" name="deporte"
-														th:field="*{id_alm}" class='form-control'>
+													<select id="name" name="deporte" th:field="*{id_alm}"
+														class='form-control'>
 														<option value="-1">Seleccione</option>
 														<option th:each="a : ${listAlmacenamiento}"
 															th:value="${a.id_alm}" th:text="${a.nomb_alm}"></option>
 													</select>
-													<div id="nameError" class="error-message" style="color:red"></div>
+													<div id="nameError" class="error-message"
+														style="color: red"></div>
 												</div>
 											</div>
 											<div class="form-group">
 												<label class="col-lg-3 control-label" for="id_reg_deporte">Marca</label>
 												<div class="col-lg-3">
-													<select id="brand" name="deporte"
-														class='form-control' th:field="*{id_marc}">
+													<select id="brand" name="deporte" class='form-control'
+														th:field="*{id_marc}">
 														<option value="-1">Seleccione</option>
 														<option th:each="m : ${listMarca}" th:value="${m.id_marc}"
-															th:text="${m.nomb_marc}" ></option>
+															th:text="${m.nomb_marc}"></option>
 													</select>
-													<div id="brandError" class="error-message" style="color:red"></div>
+													<div id="brandError" class="error-message"
+														style="color: red"></div>
 												</div>
 											</div>
 											<div class="form-group">
 												<label class="col-lg-3 control-label"
 													for="id_reg_num_mujeres">#Stock</label>
 												<div class="col-lg-3">
-													<input class="form-control" id="stock"
-														type="number" step="0.01" th:field="*{stock_prod}"
+													<input class="form-control" id="stock" type="number"
+														step="0.01" th:field="*{stock_prod}"
 														placeholder="Ingrese el stock" />
-													<div id="stockError" class="error-message" style="color:red"></div>
+													<div id="stockError" class="error-message"
+														style="color: red"></div>
 												</div>
 											</div>
 											<div class="form-group">
 												<label class="col-lg-3 control-label" for="id_reg_maxima">Precio</label>
 												<div class="col-lg-3">
-													<input class="form-control"  id="price" 
-														placeholder="Ingrese el precio"
-														type="number" step="0.01" th:field="*{precio_prod}" />
-													<div id="priceError" class="error-message" style="color:red"></div>
+													<input class="form-control" id="price"
+														placeholder="Ingrese el precio" type="number" step="0.01"
+														th:field="*{precio_prod}" />
+													<div id="priceError" class="error-message"
+														style="color: red"></div>
 												</div>
 											</div>
 
@@ -169,147 +183,139 @@
 														id="id_btn_registra" onclick="registerProduct()">REGISTRA</button>
 												</div>
 											</div>
-											<div th:class="${clase}" role="alert" th:text="${mensaje}"></div>
+
 										</div>
 									</div>
 								</div>
 
 							</div>
 						</form>
-						
+
 					</div>
 				</div>
 			</div>
 
 		</div>
+
 
 		<div class="modal fade" id="id_div_modal_actualiza">
 			<div class="modal-dialog" style="width: 60%">
-
-				<div class="modal-content">
-					<div class="modal-header" style="padding: 35px 50px">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4>
-							<span class="glyphicon glyphicon-ok-sign"></span> Actualiza
-							Modalidad
-						</h4>
+				<div class="modal-header"
+						style="padding: 35px 50px; background-color: yellow;">
+				<div class="modal-body" style="padding: 20px 10px; background-color: yellow;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 style="background-color: yellow; "><span class="glyphicon glyphicon-ok-sign" style="background-color: yellow; "></span > Actualiza Modalidad </h4>
 					</div>
-					<div class="modal-body" style="padding: 20px 10px;">
-						<form id="id_form_actualiza" accept-charset="UTF-8"
-							action="registraActualizaCrudModalidad" class="form-horizontal"
-							method="post">
-							<div class="panel-group" id="steps">
-								<!-- Step 1 -->
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#steps"
-												href="#stepOne">Datos de Modalidad</a>
-										</h4>
-									</div>
-									<div id="stepOne" class="panel-collapse collapse in">
-										<div class="panel-body">
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_ID">ID</label>
-												<div class="col-lg-8">
-													<input class="form-control" id="id_ID" readonly="readonly"
-														name="idModalidad" type="text" maxlength="8" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_nombre">Nombre</label>
-												<div class="col-lg-3">
-													<input class="form-control" id="id_act_nombre"
-														name="nombre" placeholder="Ingrese el Nombre" type="text"
-														maxlength="20" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_num_hombres">#
-													Hombres</label>
-												<div class="col-lg-3">
-													<input class="form-control" id="id_act_num_hombres"
-														name="numHombres"
-														placeholder="Ingrese el n�mero de hombres" type="text"
-														maxlength="2" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_num_mujeres">#
-													Mujeres</label>
-												<div class="col-lg-3">
-													<input class="form-control" id="id_act_num_mujeres"
-														name="numMujeres"
-														placeholder="Ingrese el n�mero de mujeres" type="text"
-														maxlength="2" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_maxima">Edad
-													M�xima</label>
-												<div class="col-lg-3">
-													<input class="form-control" id="id_act_maxima"
-														name="edadMaxima" placeholder="Ingrese la edad m�xima"
-														type="text" maxlength="2" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_minima">Edad
-													M�nima</label>
-												<div class="col-lg-3">
-													<input class="form-control" id="id_act_minima"
-														name="edadMinima" placeholder="Ingrese la edad m�nima"
-														type="text" maxlength="2" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_act_sede">Sede</label>
-												<div class="col-lg-8">
-													<input class="form-control" id="id_act_sede" name="sede"
-														placeholder="Ingrese la sede" type="text" maxlength="20" />
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-lg-3 control-label" for="id_act_deporte">Deporte</label>
-												<div class="col-lg-3">
-													<select id="id_act_deporte" name="deporte"
-														class='form-control'>
-														<option value=" ">[Seleccione]</option>
-													</select>
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="col-lg-9 col-lg-offset-3">
-													<button type="button" class="btn btn-primary"
-														id="id_btn_actualiza">ACTUALIZA</button>
-												</div>
+				</div>
+				<div class="modal-body" style="padding: 20px 10px;">
+			
+					<form accept-charset="UTF-8" class="form-horizontal"
+						 th:action="@{/editar}" th:object="${producto}" method="post">
+						<div class="panel-group" id="steps">
+
+							<div class="panel panel-default">
+								<div id="stepOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_ID">ID</label>
+											<div class="col-lg-8">
+												<input type="hidden" class="form-control" id="id"
+													placeholder="Código" th:field="*{id_prod}">
 											</div>
 										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Nombre del
+												Prooducto</label>
+											<div class="col-lg-3">
+												<select th:field="*{id_alm}" class='form-control' id="alm"> 
+													<option value="-1">Seleccione</option>
+													<option th:each="a : ${listAlmacenamiento}"
+														th:value="${a.id_alm}" th:text="${a.nomb_alm}"></option>
+												</select>
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_reg_deporte">Marca</label>
+											<div class="col-lg-3">
+												<select id="brand" class='form-control'
+													th:field="*{id_marc}">
+													<option value="-1">Seleccione</option>
+													<option th:each="m : ${listMarca}" th:value="${m.id_marc}"
+														th:text="${m.nomb_marc}"></option>
+												</select>
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label"
+												for="id_reg_num_mujeres">#Stock</label>
+											<div class="col-lg-3">
+												<input class="form-control" id="stock" type="number"
+													step="0.01" th:field="*{stock_prod}"
+													placeholder="Ingrese el stock" />
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_reg_maxima">Precio</label>
+											<div class="col-lg-3">
+												<input class="form-control" id="price"
+													placeholder="Ingrese el precio" type="number" step="0.01"
+													th:field="*{precio_prod}" />
+
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-lg-9 col-lg-offset-3">
+												<button type="submit" class="btn btn-primary"
+													id="id_btn_actualiza">ACTUALIZA</button>
+											</div>
+										</div>
+
 									</div>
 								</div>
 							</div>
-
-						</form>
-
-					</div>
+						</div>
+					</form>
 				</div>
-			</div>
 
 		</div>
-
 	</div>
+
 
 	<script src="js/producto.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-	<script th:inline="javascript">
-		function confirmarEliminacion() {
-			if (confirm("¿Estás seguro de que deseas eliminar este producto?")) {
-				alert("Producto eliminado")
-				return true;
-			} else {
-				return false;
-			}
-		}
-	</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.editar-producto').click(function() {
+      var productoId = $(this).data('producto-id');
+      cargarDatosProducto(productoId);
+    });
+  
+    function cargarDatosProducto(productoId) {
+      $.ajax({
+        url: '/datos/' + productoId,
+        type: 'GET',
+        success: function(producto) {
+          // Llenar los campos del formulario de la subventana emergente con los datos del producto
+          $('#id').val(parseInt(producto.id_prod));
+          $('#alm').val(parseInt(producto.id_alm));
+          $('#brand').val(parseInt(producto.id_marc));
+          $('#stock').val(producto.stock_prod);
+          $('#price').val(producto.precio_prod);
+          // Más campos...
+        },
+        error: function() {
+          // Manejar errores de carga de datos del producto
+          alert('Error al cargar los datos del producto.');
+        }
+      });
+    }
+  });
+</script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Claro p mascota</h1>
+	<div class="modal fade" id="id_div_modal_actualiza">
+			<div class="modal-dialog" style="width: 60%">
+				<div class="modal-header"
+						style="padding: 35px 50px; background-color: yellow;">
+				<div class="modal-body" style="padding: 20px 10px; background-color: yellow;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 style="background-color: yellow; "><span class="glyphicon glyphicon-ok-sign" style="background-color: yellow; "></span > Actualiza Modalidad </h4>
+					</div>
+				</div>
+				<div class="modal-body" style="padding: 20px 10px;">
+			
+					<form accept-charset="UTF-8" class="form-horizontal"
+						th:action="@{/editar}" th:object="${producto}" method="post">
+						<div class="panel-group" id="steps">
+
+							<div class="panel panel-default">
+								<div id="stepOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_ID">ID</label>
+											<div class="col-lg-8">
+												<input type="hidden" class="form-control" id="inputCod"
+													placeholder="Código" th:field="*{id_prod}">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label">Nombre del
+												Prooducto</label>
+											<div class="col-lg-3">
+												<select th:field="*{id_alm}" class='form-control'>
+													<option value="-1">Seleccione</option>
+													<option th:each="a : ${listAlmacenamiento}"
+														th:value="${a.id_alm}" th:text="${a.nomb_alm}"></option>
+												</select>
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_reg_deporte">Marca</label>
+											<div class="col-lg-3">
+												<select id="brand" class='form-control'
+													th:field="*{id_marc}">
+													<option value="-1">Seleccione</option>
+													<option th:each="m : ${listMarca}" th:value="${m.id_marc}"
+														th:text="${m.nomb_marc}"></option>
+												</select>
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label"
+												for="id_reg_num_mujeres">#Stock</label>
+											<div class="col-lg-3">
+												<input class="form-control" id="stock" type="number"
+													step="0.01" th:field="*{stock_prod}"
+													placeholder="Ingrese el stock" />
+
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-lg-3 control-label" for="id_reg_maxima">Precio</label>
+											<div class="col-lg-3">
+												<input class="form-control" id="price"
+													placeholder="Ingrese el precio" type="number" step="0.01"
+													th:field="*{precio_prod}" />
+
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-lg-9 col-lg-offset-3">
+												<button type="submit" class="btn btn-primary"
+													id="id_btn_actualiza">ACTUALIZA</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

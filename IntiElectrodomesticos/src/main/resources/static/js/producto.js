@@ -134,3 +134,11 @@ function confirmarEliminacion() {
 		return false;
 	}
 }
+function confirmarEliminacion() {
+	if (confirm("¿Estás seguro de que deseas eliminar este producto?")) {
+		alert("Producto eliminado")
+		return true;
+	} else {
+		return false;
+	}
+}
